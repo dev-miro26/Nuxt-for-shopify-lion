@@ -1,0 +1,8 @@
+query($slug: String!) {
+  collection: allShopCollection(
+    where: { handle: { eq: $slug } }
+    sort: [{ _updatedAt: ASC }]
+  ) {
+    handle
+  }
+}

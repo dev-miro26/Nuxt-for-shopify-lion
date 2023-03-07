@@ -1,0 +1,18 @@
+@import 'reset';
+@import 'base';
+@import 'blocks';
+@import 'buttons';
+@import 'fonts';
+@import 'functions';
+@import 'images';
+@import 'layouts';
+@import 'mixins';
+@import 'transitions';
+@import 'typography';
+@import 'utilities';
+@import 'variables';
+@import 'nav';
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}

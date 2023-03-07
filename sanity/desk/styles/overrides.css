@@ -1,0 +1,17 @@
+/* left aligns all field descriptions */
+:global(.DefaultFieldset_description_3azon) {
+  text-align: left;
+}
+
+/* removes border-left from portable text toolbar */
+:global(.Toolbar_actionMenuContainer_1LPy3) {
+  border-left: 0px;
+}
+
+/* styles links in netlify dashboard widget */
+:global(.SiteItem_title_12Xxv a) {
+  color: var(--link-color);
+  font-family: var(--font-family-monospace);
+  font-size: var(--font-size-small);
+  text-decoration: none;
+}

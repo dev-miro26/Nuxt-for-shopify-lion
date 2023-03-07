@@ -1,0 +1,17 @@
+query($slug: String!) {
+  page: allTextPage(
+    where: { slug: { current: { eq: $slug } } }
+    sort: [{ _updatedAt: ASC }]
+  ) {
+    content: contentRaw
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+      title
+    }
+  }
+}

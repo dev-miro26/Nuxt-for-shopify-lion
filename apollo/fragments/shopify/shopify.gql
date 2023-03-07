@@ -1,0 +1,60 @@
+fragment cartLineItems on CheckoutLineItemConnection {
+  edges {
+    node {
+      id
+      quantity
+      title
+      variant {
+        id
+        title
+        priceV2 {
+          amount
+        }
+        image {
+          ...productImage
+        }
+        product {
+          handle
+          id
+          title
+          vendor
+        }
+        quantityAvailable
+      }
+    }
+  }
+}
+
+fragment cartCheckout on Checkout {
+  completedAt
+  id
+  lineItems(first: 50) {
+    ...cartLineItems
+  }
+  subtotalPriceV2 {
+    amount
+    currencyCode
+  }
+  totalPriceV2 {
+    amount
+    currencyCode
+  }
+  webUrl
+}
+
+fragment productImage on Image {
+  originalSrc
+  altText
+  id
+}
+
+fragment priceRange on ProductPriceRange {
+  maxVariantPrice {
+    amount
+    currencyCode
+  }
+  minVariantPrice {
+    amount
+    currencyCode
+  }
+}

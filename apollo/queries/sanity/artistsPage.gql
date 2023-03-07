@@ -1,0 +1,45 @@
+query {
+  page: ArtistsPage(id: "artistsPage") {
+    sectionTitle
+    artists {
+      category
+      featuredImage {
+        alt
+        asset {
+          id: _id
+          url
+        }
+      }
+      firstName
+      lastName
+      slug {
+        current
+      }
+    }
+    customSectionTitle
+    customArtistsList {
+      category
+      featuredImage {
+        alt
+        asset {
+          id: _id
+          url
+        }
+      }
+      firstName
+      lastName
+      slug {
+        current
+      }
+    }
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+      title
+    }
+  }
+}

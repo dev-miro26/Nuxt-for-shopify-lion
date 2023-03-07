@@ -1,0 +1,27 @@
+fragment items on Exhibition {
+  artists {
+    firstName
+    lastName
+  }
+  closingDate
+  featuredImage {
+    alt
+    asset {
+      id: _id
+      url
+    }
+  }
+  featuredVideo {
+    url
+  }
+  groupShowName
+  location {
+    name
+  }
+  name
+  openingDate
+  slug {
+    current
+  }
+}
+

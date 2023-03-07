@@ -1,0 +1,87 @@
+.button {
+  background: $black;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding: css-pixels(40px);
+  white-space: nowrap;
+  @include breakpoint('tablet') {
+    padding: 13px 20px;
+  }
+
+  &:disabled,
+  &.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.icon-button {
+  @extend .button;
+  background: transparent;
+  padding: unset;
+  width: css-pixels(74px);
+  height: css-pixels(74px);
+  @include breakpoint('tablet') {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.inquire-button {
+  @extend .button;
+  padding: css-pixels(40px) css-pixels(80px);
+  @include breakpoint('tablet') {
+    padding: 16px 40px;
+  }
+  font-size: 20px;
+}
+
+.select-button {
+  @extend .button;
+  background: $dark-gray;
+  height: 100%;
+}
+
+.sold-out {
+  background: transparent;
+  border: 1px solid $black;
+  color: $black;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding: 4px 8px;
+  white-space: nowrap;
+
+  &:disabled
+  &.disabled {
+    pointer-events: none;
+  }
+}
+
+.view-more-button {
+  border-radius: 2px;
+  background: $white;
+  cursor: pointer;
+  padding: 6px 20px;
+}
+
+.view-more-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.text-icon-button {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: css-pixels(20px);
+  svg,
+  img {
+    width: auto;
+    height: css-pixels(40px);
+  }
+}

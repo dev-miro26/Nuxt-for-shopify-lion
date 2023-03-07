@@ -1,0 +1,7 @@
+query CheckoutById($checkoutId: ID!) {
+  node(id: $checkoutId) {
+    ... on Checkout {
+      ...checkout
+    }
+  }
+}

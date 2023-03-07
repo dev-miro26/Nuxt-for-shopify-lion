@@ -1,0 +1,25 @@
+query($slug: String!) {
+  artwork: allArtwork(
+    where: { slug: { current: { eq: $slug } } }
+    sort: [{ _updatedAt: ASC }]
+  ) {
+    artist {
+      firstName
+      lastName
+    }
+    details: detailsRaw
+    description: descriptionRaw
+    dimensions
+    images {
+      alt
+      asset {
+        id: _id
+        url
+      }
+    }
+    inventoryNumber
+    medium
+    title
+    year
+  }
+}

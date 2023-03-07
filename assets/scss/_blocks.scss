@@ -1,0 +1,84 @@
+@import './typography';
+
+.content-blocks {
+  display: grid;
+  gap: css-pixels(80px);
+  @include breakpoint('tablet') {
+    gap: 40px;
+  }
+  a {
+    color: $black;
+    text-decoration: underline;
+    transition: text-decoration-color 250ms;
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  // SanityContentSuite styles
+  &.suite {
+    & > p {
+      padding: 16px;
+      overflow-wrap: break-word;
+      @include breakpoint('tablet') {
+        padding: 0px css-pixels(125px);
+        margin: auto;
+        max-width: 640px;
+        width: 100%;
+      }
+    }
+    & > h1,
+    h2,
+    h3 {
+      margin: auto;
+    }
+  }
+
+  // SanityContentTextSuite styles
+  &.text-suite {
+    padding: 0px css-pixels(40px);
+    word-break: break-word;
+
+    h1,
+    h2,
+    h3,
+    ol,
+    p,
+    ul {
+      margin: auto;
+      max-width: 640px;
+      width: 100%;
+    }
+
+    h1 {
+      @extend .text-lg;
+      @include breakpoint('middle', max) {
+        padding-bottom: css-pixels(40px);
+      }
+    }
+
+    h2 {
+      @include breakpoint('middle') {
+        font-size: $text-lg-tablet;
+      }
+    }
+
+    ol,
+    ul {
+      display: grid;
+      gap: css-pixels(40px);
+      padding: 0px css-pixels(80px);
+      @include breakpoint('tablet') {
+        gap: 20px;
+      }
+    }
+
+    ol {
+      list-style-type: lower-roman;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+  }
+}

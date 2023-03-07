@@ -1,0 +1,13 @@
+.quoteBlock {
+  background: #f5f5f5;
+  padding: 2rem;
+}
+
+p {
+  color: #262f3d;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: auto;
+  max-width: 90%;
+  text-align: center;
+}

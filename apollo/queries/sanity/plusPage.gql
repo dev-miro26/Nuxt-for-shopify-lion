@@ -1,0 +1,28 @@
+query {
+  page: PlusPage(id: "plusPage") {
+    accentColor
+    blurb: blurbRaw
+    heroImage {
+      alt
+      asset {
+        id: _id
+        url
+      }
+      caption: captionRaw
+      captionColor
+    }
+    heroText
+    heroVideo {
+      url
+    }
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+    }
+    mission: missionRaw
+  }
+}

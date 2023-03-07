@@ -1,0 +1,1143 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "name": "RootQuery",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ID",
+        "kind": "SCALAR",
+        "possibleTypes": null
+      },
+      {
+        "name": "MediaTag",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Document",
+        "kind": "INTERFACE",
+        "possibleTypes": [
+          {
+            "name": "MediaTag",
+            "description": null
+          },
+          {
+            "name": "AboutPage",
+            "description": null
+          },
+          {
+            "name": "SanityImageAsset",
+            "description": null
+          },
+          {
+            "name": "Location",
+            "description": null
+          },
+          {
+            "name": "StaffMember",
+            "description": null
+          },
+          {
+            "name": "Press",
+            "description": null
+          },
+          {
+            "name": "Artist",
+            "description": null
+          },
+          {
+            "name": "Artwork",
+            "description": null
+          },
+          {
+            "name": "Exhibition",
+            "description": null
+          },
+          {
+            "name": "SanityFileAsset",
+            "description": null
+          },
+          {
+            "name": "ArtistsPage",
+            "description": null
+          },
+          {
+            "name": "ConsignmentPage",
+            "description": null
+          },
+          {
+            "name": "ContactPage",
+            "description": null
+          },
+          {
+            "name": "CustomPreview",
+            "description": null
+          },
+          {
+            "name": "ExhibitionsPage",
+            "description": null
+          },
+          {
+            "name": "HomePage",
+            "description": null
+          },
+          {
+            "name": "NewsArticle",
+            "description": null
+          },
+          {
+            "name": "NewsPage",
+            "description": null
+          },
+          {
+            "name": "Pdf",
+            "description": null
+          },
+          {
+            "name": "PdfCategory",
+            "description": null
+          },
+          {
+            "name": "Series",
+            "description": null
+          },
+          {
+            "name": "PlusPage",
+            "description": null
+          },
+          {
+            "name": "Settings",
+            "description": null
+          },
+          {
+            "name": "ShopCollection",
+            "description": null
+          },
+          {
+            "name": "ShopPage",
+            "description": null
+          },
+          {
+            "name": "TextPage",
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "String",
+        "kind": "SCALAR",
+        "possibleTypes": null
+      },
+      {
+        "name": "DateTime",
+        "kind": "SCALAR",
+        "possibleTypes": null
+      },
+      {
+        "name": "Slug",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "AboutPage",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Img",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageAsset",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Float",
+        "kind": "SCALAR",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageMetadata",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Geopoint",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageDimensions",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImagePalette",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImagePaletteSwatch",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityAssetSourceData",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageHotspot",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageCrop",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "JSON",
+        "kind": "SCALAR",
+        "possibleTypes": null
+      },
+      {
+        "name": "VimeoEmbed",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Location",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Address",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Seo",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Image",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "StaffMember",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Press",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Date",
+        "kind": "SCALAR",
+        "possibleTypes": null
+      },
+      {
+        "name": "Artist",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "GridArtwork",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Artwork",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Tag",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Exhibition",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "View",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "File",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityFileAsset",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ArtistsPage",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ConsignmentPage",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "InstructionBlock",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Instruction",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Faq",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ContactPage",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "CustomPreview",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "InternalLink",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ExternalLink",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ExhibitionsPage",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "HomePage",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "NewsArticle",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "NewsPage",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Pdf",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "PdfCategory",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Series",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "PlusPage",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Settings",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Footer",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "FooterLink",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SocialLink",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ShopCollection",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ShopPage",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ShopNav",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "TextPage",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "MediaTagFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Sanity_DocumentFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "IDFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "StringFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "DatetimeFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SlugFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "MediaTagSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SortOrder",
+        "kind": "ENUM",
+        "possibleTypes": null
+      },
+      {
+        "name": "SlugSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Int",
+        "kind": "SCALAR",
+        "possibleTypes": null
+      },
+      {
+        "name": "AboutPageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ImgFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageAssetFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "FloatFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageMetadataFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "GeopointFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageDimensionsFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImagePaletteFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImagePaletteSwatchFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "BooleanFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityAssetSourceDataFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageHotspotFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageCropFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "VimeoEmbedFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SeoFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ImageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "AboutPageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ImgSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageHotspotSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageCropSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "VimeoEmbedSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SeoSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ImageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ArtistFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "FileFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityFileAssetFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ArtistSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "FileSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ArtistsPageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ArtistsPageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ArtworkFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ArtworkSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ConsignmentPageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ConsignmentPageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ContactPageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ContactPageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "CustomPreviewFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "InternalLinkFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ExternalLinkFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "CustomPreviewSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "InternalLinkSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ExternalLinkSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ExhibitionFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "LocationFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "AddressFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "DateFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ExhibitionSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ExhibitionsPageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ExhibitionsPageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "HomePageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "HomePageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "LocationSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "AddressSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "NewsArticleFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "NewsArticleSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "NewsPageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "NewsPageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "PdfFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "PdfCategoryFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "PdfSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "PlusPageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "PlusPageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "PressFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "PressSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SeriesFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SeriesSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SettingsFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "FooterFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SettingsSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "FooterSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ShopCollectionFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ShopCollectionSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ShopPageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ShopNavFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ShopPageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ShopNavSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "StaffMemberFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "StaffMemberSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "TextPageFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "TextPageSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "PdfCategorySorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageAssetSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageMetadataSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "GeopointSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImageDimensionsSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImagePaletteSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityImagePaletteSwatchSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityAssetSourceDataSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SanityFileAssetSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "DocumentFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "DocumentSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "__Schema",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "__Type",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "__TypeKind",
+        "kind": "ENUM",
+        "possibleTypes": null
+      },
+      {
+        "name": "__Field",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "__InputValue",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "__EnumValue",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "__Directive",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "__DirectiveLocation",
+        "kind": "ENUM",
+        "possibleTypes": null
+      },
+      {
+        "name": "BlockOrImageBlockOrQuoteBlockOrVideoBlock",
+        "kind": "UNION",
+        "possibleTypes": [
+          {
+            "name": "Block",
+            "description": null
+          },
+          {
+            "name": "ImageBlock",
+            "description": null
+          },
+          {
+            "name": "QuoteBlock",
+            "description": null
+          },
+          {
+            "name": "VideoBlock",
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Block",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "Span",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ImageBlock",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "QuoteBlock",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "VideoBlock",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "CrossDatasetReference",
+        "kind": "OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "IntFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "CrossDatasetReferenceFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "TagFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "FaqFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "FooterLinkFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "GridArtworkFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ImageBlockFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "InstructionFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "InstructionBlockFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "QuoteBlockFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SocialLinkFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "VideoBlockFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ViewFilter",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "CrossDatasetReferenceSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "TagSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "FaqSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "FooterLinkSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "GridArtworkSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ImageBlockSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "InstructionSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "InstructionBlockSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "QuoteBlockSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "SocialLinkSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "VideoBlockSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      },
+      {
+        "name": "ViewSorting",
+        "kind": "INPUT_OBJECT",
+        "possibleTypes": null
+      }
+    ]
+  }
+}

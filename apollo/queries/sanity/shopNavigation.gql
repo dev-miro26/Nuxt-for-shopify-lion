@@ -1,0 +1,14 @@
+query {
+  shopPage: ShopPage(id: "shopPage") {
+    navigation {
+      featuredCollections {
+        displayName
+        handle
+      }
+      regularCollections {
+        displayName
+        handle
+      }
+    }
+  }
+}

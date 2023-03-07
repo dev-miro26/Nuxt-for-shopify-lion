@@ -1,0 +1,72 @@
+query($slug: String!) {
+  series: allSeries(
+    where: { slug: { current: { eq: $slug } } }
+    sort: [{ _updatedAt: ASC }]
+  ) {
+    about: aboutRaw
+    artists {
+      category
+      firstName
+      lastName
+      slug {
+        current
+      }
+    }
+    artworks {
+      artwork {
+        artist {
+          category
+          slug {
+            current
+          }
+        }
+        images {
+          alt
+          asset {
+            id: _id
+            url
+          }
+          id: _key
+        }
+        slug {
+          current
+        }
+      }
+      selectedImageId
+    }
+    blurb: blurbRaw
+    heroImage {
+      alt
+      asset {
+        id: _id
+        url
+      }
+      caption: captionRaw
+      captionColor
+    }
+    heroText
+    heroVideo {
+      url
+    }
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+      title
+    }
+    name
+    pdf {
+      asset {
+        url
+      }
+    }
+    press {
+      link
+      publicationDate
+      title
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "artlife",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Arlen Peiffer <arlen@bean.la>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.12.2",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/components": "^2.2.6",
+    "@sanity/core": "^2.12.2",
+    "@sanity/dashboard": "^2.10.5",
+    "@sanity/default-layout": "^2.12.2",
+    "@sanity/default-login": "^2.11.1",
+    "@sanity/desk-tool": "^2.12.2",
+    "@sanity/eslint-config-studio": "^2.0.1",
+    "@sanity/production-preview": "^2.33.2",
+    "@sanity/vision": "2.31.1",
+    "csv-parser": "^3.0.0",
+    "eslint": "^8.6.0",
+    "p-queue": "^7.3.0",
+    "prop-types": "^15.7",
+    "react": "^16.2",
+    "react-dom": "^16.2",
+    "react-icons": "^4.1.0",
+    "sanity-plugin-autocomplete-tags": "1.0.0",
+    "sanity-plugin-color-list": "1.2.1",
+    "sanity-plugin-dashboard-widget-netlify": "^1.0.1",
+    "sanity-plugin-media": "1.4.10",
+    "sanity-plugin-order-documents": "0.0.19",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bean-la/artlife-nuxt.git"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "fvhcpakg",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "artlife"
+  },
+  "__experimental_spaces": [
+    {
+      "name": "production",
+      "title": "production",
+      "default": true,
+      "api": {
+        "projectId": "fvhcpakg",
+        "dataset": "production"
+      }
+    },
+    {
+      "name": "staging",
+      "title": "staging",
+      "api": {
+        "projectId": "fvhcpakg",
+        "dataset": "staging"
+      }
+    }
+  ],
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/dashboard",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/production-preview",
+    "autocomplete-tags",
+    "color-list",
+    "dashboard-widget-netlify",
+    "media",
+    "@sanity/vision"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    },
+    "api": {
+      "dataset": "staging"
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./desk/lib/structure.js"
+    },
+    {
+      "name": "part:@sanity/base/initial-value-templates",
+      "path": "./desk/lib/templates.js"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input/image/asset-sources",
+      "path": "./desk/lib/assets.js"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./desk/lib/dashboard.js"
+    },
+    {
+      "implements": "part:@sanity/production-preview/resolve-production-url",
+      "path": "./desk/lib/preview.js"
+    },
+    {
+      "implements": "part:@sanity/base/theme/variables/override-style",
+      "path": "./desk/styles/overrides.css"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+query($handle: String!) {
+  product: productByHandle(handle: $handle) {
+    id
+    variants(first: 10) {
+      edges {
+        node {
+          id
+          quantityAvailable
+        }
+      }
+    }
+  }
+}

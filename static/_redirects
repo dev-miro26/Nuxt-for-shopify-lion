@@ -1,0 +1,3 @@
+/artist/*               https://www.artlife.com/artist/:splat                   301
+/exhibitions/*          https://www.artlife.com/exhibitions/:splat              301
+/design                 /                                                       301!

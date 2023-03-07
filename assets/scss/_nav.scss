@@ -1,0 +1,112 @@
+// main nav styles
+.main-nav {
+  position: sticky;
+  top: -1px;
+  z-index: 99;
+  nav {
+    background: $white;
+    height: $main-nav-height-mobile;
+    @include breakpoint('tablet') {
+      height: $main-nav-height;
+    }
+  }
+}
+
+// sub nav styles
+#sub-nav-container {
+  position: sticky;
+  top: $main-nav-height-mobile - 1px;
+  z-index: 98;
+  @include breakpoint('tablet') {
+    top: $main-nav-height - 1px;
+  }
+}
+
+// shared nav styles
+.nav {
+  padding: 0px css-pixels(40px);
+  @include breakpoint('tablet') {
+    padding: 0px 20px;
+  }
+}
+
+.split-nav {
+  @extend .nav;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-group {
+  display: grid;
+  grid-auto-flow: column;
+  gap: css-pixels(80px);
+  align-items: stretch;
+  @include breakpoint('laptop') {
+    gap: 35px;
+  }
+
+  .nav-group-item {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    .dropdown-container {
+      display: grid;
+      &:hover {
+        .dropdown {
+          display: grid;
+        }
+      }
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        top: $sub-nav-height-mobile;
+        white-space: nowrap;
+        @include breakpoint('tablet') {
+          top: $sub-nav-height;
+        }
+      }
+    }
+  }
+
+  .icon-grid-item {
+    @extend .nav-group-item;
+    align-items: center;
+  }
+
+  a,
+  button {
+    display: flex;
+    align-items: center;
+    color: $black;
+    &.active,
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  button {
+    border: none;
+    background: inherit;
+    padding: 0;
+    outline: none;
+    &:focus-visible {
+      outline: 1px dotted $dark-gray;
+    }
+  }
+}
+
+.search-icon {
+
+  svg {
+    width: css-pixels(74px);
+    height: css-pixels(74px);
+    @include breakpoint('tablet') {
+      margin-bottom: 25%;
+    }
+    @include breakpoint('desktop') {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

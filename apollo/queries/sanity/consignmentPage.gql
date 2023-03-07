@@ -1,0 +1,44 @@
+query {
+  page: ConsignmentPage(id: "consignmentPage") {
+    faqs {
+      bodyRaw
+      title
+    }
+    about
+    description: descriptionRaw
+    heroImage {
+      alt
+      asset {
+        id: _id
+        url
+      }
+      caption: captionRaw
+      captionColor
+    }
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+      title
+    }
+    instructionBlocks {
+      heading
+      instructions {
+        description: descriptionRaw
+        heading
+        image {
+          alt
+          asset {
+            id: _id
+            url
+          }
+          caption: captionRaw
+          captionColor
+        }
+      }
+    }
+  }
+}

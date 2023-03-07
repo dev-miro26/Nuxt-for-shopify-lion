@@ -1,0 +1,60 @@
+query {
+  settings: Settings(id: "settings") {
+    acuityEnabled
+    footer {
+      email
+      socialLinks {
+        name
+        link {
+          url
+          }
+        icon {
+          alt
+          asset {
+            id: _id
+            url
+          }
+        }
+      }
+      footerLinks {
+        externalLink {
+          url
+        }
+        internalLink {
+          url
+        }
+        title
+      }
+      locations {
+        address {
+          city
+          state
+          street
+          zipcode
+        }
+        email
+        heroImage {
+          alt
+          asset {
+            id: _id
+            url
+          }
+          caption: captionRaw
+          captionColor
+        }
+        hours
+        phone
+        shortName
+      }
+    }
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+      title
+    }
+  }
+}

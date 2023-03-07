@@ -1,0 +1,12 @@
+html {
+  font-family: $primary-font;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  :focus-visible {
+    outline: 1px dotted $dark-gray;
+  }
+}

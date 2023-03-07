@@ -1,0 +1,12 @@
+.fullWidth {
+  width: 100%;
+}
+
+.halfWidth {
+  width: 60%;
+}
+
+.imageBlock {
+  display: grid;
+  place-items: center;
+}

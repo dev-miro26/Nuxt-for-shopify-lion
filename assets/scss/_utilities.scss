@@ -1,0 +1,86 @@
+.auto {
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.hide-on-mobile-down {
+  @include breakpoint('mobile', max) {
+    display: none;
+  }
+}
+
+.hide-on-mobile-up {
+  @include breakpoint('mobile') {
+    display: none;
+  }
+}
+
+.hide-on-tablet {
+  @include breakpoint('tablet') {
+    display: none;
+  }
+  @include breakpoint('middle') {
+    display: unset;
+  }
+}
+
+.hide-on-tablet-down {
+  @include breakpoint('tablet', max) {
+    display: none;
+  }
+}
+
+.hide-on-tablet-up {
+  @include breakpoint('tablet') {
+    display: none;
+  }
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.mobile-no-scroll {
+  @include breakpoint('tablet', max) {
+    overflow: hidden;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.show-on-tablet {
+  display: none;
+  @include breakpoint('tablet') {
+    display: unset;
+  }
+  @include breakpoint('middle') {
+    display: none;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+

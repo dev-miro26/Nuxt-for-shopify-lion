@@ -1,0 +1,26 @@
+.hero-image-crop {
+  @include cropImage(55.4375);
+  margin-left: 16px;
+  margin-right: 16px;
+  width: unset;
+}
+
+.exhibition-image-crop {
+  @include cropImage(55.4375);
+}
+
+.preview-image-crop {
+  @include cropImage(45);
+}
+
+.product-image-crop {
+  @include cropImage(100);
+}
+
+.profile-image-crop {
+  @include cropImage(100);
+}
+
+.location-image-crop {
+  @include cropImage(45)
+}

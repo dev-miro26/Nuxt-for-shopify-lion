@@ -1,0 +1,33 @@
+query($slug: String!) {
+  article: allNewsArticle(
+    where: { slug: { current: { eq: $slug } } }
+    sort: [{ _updatedAt: ASC }]
+  ) {
+    title
+    slug {
+      current
+    }
+    blurb
+    heroImage {
+      alt
+      asset {
+        id: _id
+        url
+      }
+    }
+    bodyContentRaw
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+    }
+    artist {
+      slug {
+        current
+      }
+    }
+  }
+}

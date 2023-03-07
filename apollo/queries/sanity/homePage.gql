@@ -1,0 +1,18 @@
+#import "~/apollo/fragments/sanity/feed.gql"
+
+query {
+  page: HomePage(id: "homePage") {
+    feed {
+      ...items
+    }
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+      title
+    }
+  }
+}

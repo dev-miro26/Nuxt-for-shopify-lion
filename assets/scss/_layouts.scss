@@ -1,0 +1,205 @@
+.artwork-grid {
+  display: grid;
+
+  @include breakpoint('mobile') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  gap: 55px 16px;
+
+  max-width: 1280px;
+  margin: auto;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 7px;
+  }
+}
+
+.mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: css-pixels(40px);
+  max-width: 1280px;
+  margin: auto;
+
+  // selects first 3 items
+  & > :nth-child(-n + 3) {
+    grid-column: span 3;
+  }
+
+  @include breakpoint('tablet') {
+    grid-template-columns: repeat(15, 1fr);
+    gap: 20px;
+
+    // selects first 9 items
+    & > :nth-child(-n + 9) {
+      grid-column: span 5;
+    }
+
+    // selects 10th item and up
+    & > :nth-child(n + 10) {
+      grid-column: span 3;
+    }
+  }
+
+  @include breakpoint('middle') {
+    gap: 40px;
+  }
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: auto;
+  @include breakpoint('tablet') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint('middle') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint('desktop') {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &.mobile-two-up {
+    @include breakpoint('tablet', max) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  &.spaced {
+    @include breakpoint('tablet', max) {
+      column-gap: css-pixels(40px);
+      row-gap: css-pixels(120px);
+    }
+    row-gap: 90px;
+  }
+
+  &.tight {
+    column-gap: css-pixels(40px);
+    row-gap: 36px;
+    @include breakpoint('tablet', max) {
+      row-gap: css-pixels(40px);
+    }
+  }
+
+  .collection-grid-item {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: left;
+    p {
+      font-size: 24px;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.detail-page {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.flow-grid {
+  display: grid;
+  gap: css-pixels(40px);
+  @include breakpoint('tablet') {
+    gap: 40px;
+  }
+}
+
+.full-width-container {
+  padding: 0px css-pixels(40px);
+  @include breakpoint('tablet') {
+    padding: 0px 20px;
+  }
+  .full-width {
+    margin: auto;
+    max-width: 1280px;
+    max-height: 928px;
+    object-fit: contain;
+  }
+}
+
+.half-width-container {
+  padding: 0px css-pixels(125px);
+  .half-width {
+    margin: auto;
+    max-width: 760px;
+    // max-height: 551px;
+    object-fit: contain;
+  }
+
+  .half-width.vertical,
+  .half-width.vertical + .caption {
+    max-width: 640px;
+    max-height: none;
+    padding: 0px;
+    object-fit: contain;
+    @include breakpoint('tablet') {
+      padding: 0px css-pixels(125px);
+    }
+  }
+}
+
+.page-bottom {
+  padding-bottom: 40px;
+}
+
+.page-container {
+  @extend .page-top;
+  @extend .page-bottom;
+  background: $white;
+}
+
+.page-container-thin {
+  @extend .page-container;
+  @extend .section-margin;
+}
+
+.page-container-wide {
+  @extend .page-container;
+  @extend .section-margin-wide;
+}
+
+.page-top {
+  padding-top: 0px;
+}
+
+.shop-container {
+  padding-top: 15px;
+}
+
+.sections-container {
+  background: $white;
+  display: grid;
+  gap: css-pixels(40px);
+  padding: $section-spacing-mobile 0px;
+  @include breakpoint('tablet') {
+    gap: 40px;
+    padding: $section-spacing 0px;
+  }
+}
+
+.section-margin {
+  padding-left: css-pixels(40px);
+  padding-right: css-pixels(40px);
+  @include breakpoint('tablet') {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include breakpoint('middle') {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.section-margin-wide {
+  padding-left: 16px;
+  padding-right: 16px;
+}

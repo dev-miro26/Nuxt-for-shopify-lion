@@ -1,0 +1,107 @@
+//Breakpoints
+$little-width: 375px;
+$mobile-width: 600px;
+$tablet-width: 875px;
+$middle-width: 1200px;
+$laptop-width: 1375px;
+$desktop-width: 1625px;
+$breakpoints: (
+  'little': $little-width,
+  'mobile': $mobile-width,
+  'tablet': $tablet-width,
+  'middle': $middle-width,
+  'laptop': $laptop-width,
+  'desktop': $desktop-width
+);
+
+// Color
+$white: #ffffff;
+$white-smoke: #f2f2f2;
+$dark-gray: #a0a0a0;
+$medium-gray: #B5B5B5;
+$light-gray: #F7F7F7;
+$dim-gray: #676767;
+$cyan: #858686;
+$mortar: #575656;
+$night-rider: #333333;
+$black: #000000;
+$flamingo: #ff6aff;
+$light-cyan: #d8fff7;
+$cotton-candy: #ffc4ff;
+$pale-lavender: #c4e2ff;
+$aquamarine: #8dffde;
+$electric-blue: #8df4ff;
+$green-yellow: #9aff57;
+$blush: #ffe5eb;
+$papaya-whip: #fff0d8;
+$lavender: #c2b4ff;
+$peach: #ffcc99;
+$mona-lisa: #ff9999;
+$magenta: #ff6699;
+$brown: #3C1A00;
+
+
+// Font
+$primary-font: 'Wotfard', system-ui, 'Helvetica Neue', Arial, sans-serif;
+
+// Font Size
+$text-xs-tablet: 10px;
+$text-xs-mobile: css-pixels(20px);
+
+$text-sm-desktop: 16px;
+$text-sm-laptop: $text-sm-desktop * 0.8;
+$text-sm-middle: $text-sm-desktop * 0.7;
+$text-sm-tablet: css-pixels(40px);
+
+$text-md-desktop: 32px;
+$text-md-laptop: $text-md-desktop * 0.8;
+$text-md-middle: $text-md-desktop * 0.7;
+
+$text-lg-desktop: 40px;
+$text-lg-laptop: $text-lg-desktop * 0.8;
+$text-lg-middle: $text-lg-desktop * 0.7;
+$text-lg-tablet: css-pixels(94px);
+$text-lg-mobile: 28px;
+$text-lg-little: 24px;
+
+$text-xl-desktop: 64px;
+$text-xl-laptop: $text-xl-desktop * 0.8;
+$text-xl-middle: $text-xl-desktop * 0.7;
+$text-xl-tablet: css-pixels(140px);
+
+// Size
+$main-nav-height: 90px;
+$main-nav-height-mobile: css-pixels(300px);
+$sub-nav-height: 36px;
+$sub-nav-height-mobile: css-pixels(120px);
+$cart-dropdown-offset: $main-nav-height + $sub-nav-height;
+$cart-dropdown-offset-mobile: $main-nav-height-mobile + $sub-nav-height-mobile;
+$section-spacing: 40px;
+$section-spacing-mobile: css-pixels(40px);
+$anchor-offset: $main-nav-height + $sub-nav-height + $section-spacing;
+$anchor-offset-mobile: $main-nav-height-mobile + $sub-nav-height-mobile +
+  $section-spacing-mobile;
+
+// Export Colors
+:export {
+  aquamarine: $aquamarine;
+  black: $black;
+  blush: $blush;
+  cotton-candy: $cotton-candy;
+  dark-gray: $dark-gray;
+  dim-gray: $dim-gray;
+  electric-blue: $electric-blue;
+  flamingo: $flamingo;
+  green-yellow: $green-yellow;
+  lavender: $lavender;
+  light-cyan: $light-cyan;
+  magenta: $magenta;
+  mona-lisa: $mona-lisa;
+  mortar: $mortar;
+  night-rider: $night-rider;
+  pale-lavender: $pale-lavender;
+  papaya-whip: $papaya-whip;
+  peach: $peach;
+  white: $white;
+  white-smoke: $white-smoke;
+}

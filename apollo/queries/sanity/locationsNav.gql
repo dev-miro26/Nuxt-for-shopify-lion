@@ -1,0 +1,10 @@
+query {
+  page: AboutPage(id: "aboutPage") {
+    locations {
+      shortName
+      slug {
+        current
+      }
+    }
+  }
+}

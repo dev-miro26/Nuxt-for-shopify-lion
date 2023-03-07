@@ -1,0 +1,118 @@
+query($slug: String!) {
+  exhibition: allExhibition(
+    where: { slug: { current: { eq: $slug } } }
+    sort: [{ _updatedAt: ASC }]
+  ) {
+    about: aboutRaw
+    allowAppointments
+    artists {
+      category
+      firstName
+      lastName
+      slug {
+        current
+      }
+    }
+    artworks {
+      artwork {
+        artist {
+          category
+          slug {
+            current
+          }
+        }
+        images {
+          alt
+          asset {
+            id: _id
+            url
+          }
+          id: _key
+        }
+        slug {
+          current
+        }
+        title
+        year
+      }
+      selectedImageId
+    }
+    blurb: blurbRaw
+    closingDate
+    heroImage {
+      alt
+      asset {
+        id: _id
+        url
+      }
+      caption: captionRaw
+      captionColor
+    }
+    heroText
+    heroVideo {
+      url
+    }
+    groupShowName
+    location {
+      acuityId
+      name
+    }
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+      title
+    }
+    name
+    openingDate
+    pdf {
+      asset {
+        url
+      }
+    }
+    press {
+      link
+      publicationDate
+      title
+    }
+    type
+    views {
+      artworks {
+        artist {
+          firstName
+          lastName
+          category
+          slug {
+            current
+          }
+        }
+        dimensions
+        medium
+        slug {
+          current
+        }
+        title
+        year
+      }
+      photo {
+        alt
+        asset {
+          id: _id
+        }
+      }
+      overlayDesktop {
+        asset {
+          id: _id
+        }
+      }
+      overlayMobile {
+        asset {
+          id: _id
+        }
+      }
+    }
+  }
+}

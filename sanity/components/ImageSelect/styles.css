@@ -1,0 +1,25 @@
+.imagesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(152px, auto));
+  gap: 10px;
+  padding: 0px 10px;
+}
+
+.imageContainer {
+  display: grid;
+  place-items: center;
+}
+
+.imageBorder {
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.image {
+  width: 100%;
+}
+
+.selected {
+  border-color: #2276fc;
+}

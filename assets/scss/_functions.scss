@@ -1,0 +1,4 @@
+// divides device pixels by 3 since we were given designs at 3x actual size
+@function css-pixels($device-pixels, $pixel-ratio: 3) {
+  @return $device-pixels / $pixel-ratio;
+}

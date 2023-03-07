@@ -1,0 +1,12 @@
+query($slug: String!) {
+  pdf: allPdf(
+    where: { slug: { current: { eq: $slug } } }
+    sort: [{ _updatedAt: ASC }]
+  ) {
+    file {
+      asset {
+        url
+      }
+    }
+  }
+}

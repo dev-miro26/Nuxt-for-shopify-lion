@@ -1,0 +1,9 @@
+query {
+  exhibitions: allExhibition(sort: [{ _updatedAt: ASC }]) {
+    name
+    slug {
+      current
+    }
+    type
+  }
+}

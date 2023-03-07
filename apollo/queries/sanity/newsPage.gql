@@ -1,0 +1,41 @@
+query {
+  newsArticles: allNewsArticle(sort: [{ _createdAt: ASC }]) {
+    heroImage {
+      alt
+      asset {
+        id: _id
+        url
+      }
+    }
+    title
+    slug {
+      current
+    }
+  }
+  page: NewsPage(id: "newsPage") {
+    sectionTitle
+    customSectionTitle
+    customNewsArticleList {
+      heroImage {
+        alt
+        asset {
+          id: _id
+          url
+        }
+      }
+      title
+      slug {
+        current
+      }
+    }
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+      title
+    }
+  }
+}

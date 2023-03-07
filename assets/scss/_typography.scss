@@ -1,0 +1,92 @@
+h1,
+.text-xl {
+  font-size: $text-xl-tablet;
+  font-weight: 500;
+  line-height: 1.06;
+  @include breakpoint('middle') {
+    font-size: $text-xl-middle;
+  }
+  @include breakpoint('laptop') {
+    font-size: $text-xl-laptop;
+  }
+  @include breakpoint('desktop') {
+    font-size: $text-xl-desktop;
+  }
+}
+
+h2,
+.text-lg {
+  font-size: $text-lg-little;
+  font-weight: 500;
+  line-height: 1.06;
+  @include breakpoint('little') {
+    font-size: $text-lg-mobile;
+  }
+  @include breakpoint('mobile') {
+    font-size: $text-lg-tablet;
+  }
+  @include breakpoint('middle') {
+    font-size: $text-lg-middle;
+  }
+  @include breakpoint('laptop') {
+    font-size: $text-lg-laptop;
+  }
+  @include breakpoint('desktop') {
+    font-size: $text-lg-desktop;
+  }
+}
+
+h3,
+.text-md {
+  font-size: $text-lg-little;
+  font-weight: 500;
+  line-height: 1.5;
+  @include breakpoint('little') {
+    font-size: $text-lg-mobile;
+  }
+  @include breakpoint('mobile') {
+    font-size: $text-lg-tablet;
+  }
+  @include breakpoint('tablet') {
+    font-size: $text-md-middle;
+  }
+  @include breakpoint('laptop') {
+    font-size: $text-md-laptop;
+  }
+  @include breakpoint('desktop') {
+    font-size: $text-md-desktop;
+  }
+}
+
+h4, .text-h4 {
+  font-size: $text-sm-desktop;
+  font-weight: 500;
+  line-height: 1.5;
+  @include breakpoint('laptop') {
+    font-size: $text-lg-little;
+  }
+}
+
+h5 {
+  font-size: $text-sm-desktop;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+html,
+.text-sm {
+  font-size: $text-sm-tablet;
+  font-weight: normal;
+  line-height: 1.5;
+  @include breakpoint('laptop') {
+    font-size: $text-sm-desktop;
+  }
+}
+
+.text-xs {
+  font-size: $text-xs-mobile;
+  line-height: 1.2;
+  @include breakpoint('tablet') {
+    font-size: $text-xs-tablet;
+  }
+}

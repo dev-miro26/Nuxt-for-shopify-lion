@@ -1,0 +1,32 @@
+#import "~/apollo/fragments/shopify/shopify.gql"
+
+mutation CheckoutCreate($variantId: ID!, $quantity: Int!) {
+  checkoutCreate(
+    input: { lineItems: [{ variantId: $variantId, quantity: $quantity }] }
+  ) {
+    checkoutUserErrors {
+      code
+      message
+      field
+    }
+    checkout {
+      ...cartCheckout
+    }
+  }
+}
+
+mutation ReplaceCheckout(
+  $checkoutId: ID!
+  $lineItems: [CheckoutLineItemInput!]!
+) {
+  checkoutLineItemsReplace(checkoutId: $checkoutId, lineItems: $lineItems) {
+    userErrors {
+      code
+      message
+      field
+    }
+    checkout {
+      ...cartCheckout
+    }
+  }
+}

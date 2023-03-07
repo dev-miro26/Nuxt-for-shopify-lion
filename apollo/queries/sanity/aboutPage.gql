@@ -1,0 +1,60 @@
+query {
+  page: AboutPage(id: "aboutPage") {
+    blurb: blurbRaw
+    heroImage {
+      alt
+      asset {
+        id: _id
+        url
+      }
+      caption: captionRaw
+      captionColor
+    }
+    heroVideo {
+      url
+    }
+    locations {
+      address {
+        city
+        state
+        street
+        zipcode
+      }
+      email
+      heroImage {
+        alt
+        asset {
+          id: _id
+          url
+        }
+      }
+      hours
+      visitLinkText
+      phone
+      shortName
+      slug {
+        current
+      }
+    }
+    meta: seo {
+      description
+      image {
+        asset {
+          url
+        }
+      }
+      title
+    }
+    press {
+      link
+      publicationDate
+      title
+    }
+    staffMembers {
+      email
+      firstName
+      lastName
+      position
+    }
+  }
+}
