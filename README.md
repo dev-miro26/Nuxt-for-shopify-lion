@@ -3,17 +3,13 @@
 ## Build Setup
 
 ```bash
-# install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
 $ yarn dev
 
-# build for production and launch server
 $ yarn build
 $ yarn start
 
-# generate static project
 $ yarn generate
 ```
 
@@ -49,7 +45,9 @@ Any time updates are made to Sanity schemas, the updates must be deployed to the
 $ cd sanity
 $ sanity graphql deploy
 ```
-The query to return the schema in Sanity's GraphQL Playground is below. Run the query and copy and paste the results into the `schema.json` file in the apollo folder, removing the extra `data` object that’s nesting the results. 
+
+The query to return the schema in Sanity's GraphQL Playground is below. Run the query and copy and paste the results into the `schema.json` file in the apollo folder, removing the extra `data` object that’s nesting the results.
+
 ```
 query {
   __schema {
@@ -64,4 +62,3 @@ query {
   }
 }
 ```
-
